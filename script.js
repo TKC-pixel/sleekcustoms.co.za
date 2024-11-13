@@ -47,22 +47,22 @@ document.querySelectorAll('nav ul li a').forEach(item => {
 });
 
 
+document.getElementById('toggleButton').addEventListener('click', function () {
+  const extraVideos = document.querySelectorAll('.extra-video');
+  const button = document.getElementById('toggleButton');
 
-  document.getElementById('toggleButton').addEventListener('click', function () {
-    const extraVideos = document.querySelectorAll('.extra-video');
-    const button = document.getElementById('toggleButton');
-
-    // Toggle visibility of extra videos
-    extraVideos.forEach(video => {
-      video.classList.toggle('hidden');
-    });
-
-    // Toggle button text between "View More" and "View Less"
-    if (button.textContent === 'View More') {
-      button.textContent = 'View More';
-    } else {
-      button.textContent = 'View Less';
-    }
+  // Toggle visibility of extra videos
+  extraVideos.forEach(video => {
+    video.classList.toggle('hidden');
   });
+
+  // Toggle button text between "View More" and "View Less"
+  if (button.textContent === 'View More') {
+    button.textContent = 'View';
+  } else {
+    button.textContent = 'View';
+  }
+});
+
   
-  document.getElementById('currentYear').textContent = new Date().getFullYear();
+document.getElementById('currentYear').textContent = new Date().getFullYear();

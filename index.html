@@ -103,11 +103,12 @@
         </div>
       </div>
     </section>
-
     <section id="gallery" class="py-16">
       <div class="container mx-auto px-4 fade-in">
         <h2 class="text-3xl font-bold mb-8 text-center">Gallery</h2>
-        <div id="videoGallery" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Video Gallery -->
+        <div id="videoGallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <!-- First 3 Videos (always visible) -->
           <div class="bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl">
             <video preload="auto" autoplay muted loop playsinline controls class="w-full h-64 object-cover">
@@ -115,20 +116,24 @@
               Your browser does not support the video tag.
             </video>
           </div>
+    
           <div class="bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl">
             <video preload="auto" autoplay muted loop playsinline controls class="w-full h-64 object-cover">
-              <source src="./videos/audi3.mp4" type="video/mp4">
+              <source src="./videos/tiguan.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
+    
           <div class="bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl">
             <video preload="auto" autoplay muted loop playsinline controls class="w-full h-64 object-cover">
               <source src="./videos/golf.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
+        </div>
     
-          <!-- Remaining 7 Videos (initially hidden) -->
+        <!-- Remaining 7 Videos (initially hidden) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
           <div class="extra-video bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl hidden">
             <video preload="auto" autoplay muted loop playsinline controls class="w-full h-64 object-cover">
               <source src="./videos/gti.mp4" type="video/mp4">
@@ -165,14 +170,8 @@
               Your browser does not support the video tag.
             </video>
           </div>
-          <div class="extra-video bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl hidden">
-            <video preload="auto" autoplay muted loop playsinline controls class="w-full h-64 object-cover">
-              <source src="./videos/tiguan.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
         </div>
-    
+        
         <!-- View More/Less Button -->
         <div class="text-center mt-8">
           <button id="toggleButton" class="bg-primary text-white px-6 py-3 rounded-lg text-xl hover:bg-secondary transition-colors duration-300">
@@ -180,9 +179,7 @@
           </button>
         </div>
       </div>
-    </section>
-
-    
+    </section> 
 
     <section id="contact" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4 fade-in">

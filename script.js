@@ -2,7 +2,9 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('nav ul');
 const body = document.body;
 const backdrop = document.querySelector('.backdrop');
-const homeSection = document.getElementById('home'); 
+const homeSection = document.getElementById('home');
+const toggleButton = document.getElementById('toggleButton');
+const currentYearElement = document.getElementById('currentYear');
 
 // Function to handle toggling the transparency effect
 const toggleTransparentText = () => {
@@ -15,7 +17,7 @@ hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
   body.classList.toggle('menu-open'); 
   backdrop.classList.toggle('active'); 
-  
+
   // Toggle the transparent text effect
   toggleTransparentText();
 });
@@ -27,7 +29,7 @@ window.addEventListener('click', (e) => {
     hamburger.classList.remove('active');
     body.classList.remove('menu-open');
     backdrop.classList.remove('active');
-    
+
     // Remove the transparent text effect when closing the menu
     homeSection.classList.remove('transparent-text');
   }
@@ -46,10 +48,9 @@ document.querySelectorAll('nav ul li a').forEach(item => {
   });
 });
 
-
-document.getElementById('toggleButton').addEventListener('click', function () {
+// Toggle extra videos visibility
+toggleButton.addEventListener('click', function () {
   const extraVideos = document.querySelectorAll('.extra-video');
-  const button = document.getElementById('toggleButton');
 
   // Toggle visibility of extra videos
   extraVideos.forEach(video => {
@@ -57,12 +58,57 @@ document.getElementById('toggleButton').addEventListener('click', function () {
   });
 
   // Toggle button text between "View More" and "View Less"
-  if (button.textContent === 'View More') {
-    button.textContent = 'View';
-  } else {
-    button.textContent = 'View';
-  }
+  toggleButton.textContent = toggleButton.textContent === 'View More' ? 'View' : 'View More';
 });
 
+// Set current year dynamically
+currentYearElement.textContent = new Date().getFullYear();
+
+// Geolocation functionality
+function toggleLocationFields(isHouseCall) {
+  const locationFields = document.getElementById('locationFields');
   
-document.getElementById('currentYear').textContent = new Date().getFullYear();
+  if (isHouseCall) {
+    locationFields.style.display = 'block'; // Show location fields for house call
+  } else {
+    locationFields.style.display = 'none'; // Hide location fields if no house call
+  }
+}
+
+// Geolocation functionality
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  fetch(`https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("province").value = data.address.state || "";
+      document.getElementById("city").value = data.address.city || data.address.town || data.address.village || "";
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+function showError(error) {
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      alert("User denied the request for Geolocation.");
+      break;
+    case error.POSITION_UNAVAILABLE:
+      alert("Location information is unavailable.");
+      break;
+    case error.TIMEOUT:
+      alert("The request to get user location timed out.");
+      break;
+    case error.UNKNOWN_ERROR:
+      alert("An unknown error occurred.");
+      break;
+  }
+}

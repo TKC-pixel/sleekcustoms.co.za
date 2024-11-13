@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleek Customs - Automotive Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  
+</head>
+<body class="font-sans antialiased bg-gray-100 text-gray-800">
+  <header class="bg-primary py-6 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <a href="#home" class="text-white text-2xl font-bold fade-in">Sleek Customs</a>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <nav>
+        <ul class="flex space-x-6 text-white">
+          <li><a href="#home" class="hover:text-gray-400 slide-up">Home</a></li>
+          <li><a href="#services" class="hover:text-gray-400 slide-up">Services</a></li>
+          <li><a href="#about" class="hover:text-gray-400 slide-up">About</a></li>
+          <li><a href="#gallery" class="hover:text-gray-400 slide-up">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-gray-400 slide-up">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="backdrop"></div>
+
+  <main>
+    <section id="home" class="relative h-screen">
+      <!-- Video background -->
+      <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
+          <source src="logoanimation.mp4" type="video/mp4">
+          <!-- Fallback for browsers that do not support video -->
+          Your browser does not support the video tag.
+      </video>
+      
+      <!-- Overlay for better text visibility -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      
+      <!-- Centered Content Section -->
+      <div class="container mx-auto px-4 relative z-10 text-center text-white flex flex-col justify-center items-center h-full">
+          <h1 class="text-5xl font-extrabold leading-tight mb-6 fade-in">Welcome to Sleek Customs</h1>
+          <p class="text-lg mb-8 slide-up">We offer top-notch services that transform your ideas into reality. Explore our website to learn more about what we do and how we can help you get the service you deserve.</p>
+          <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-lg text-xl hover:bg-secondary transition-colors duration-300">Get in Touch</a>
+      </div>
+  </section>
+  
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 fade-in flex flex-col items-center">
+      <h2 class="text-3xl font-bold mb-8 text-center animate__animated animate__fadeIn">About Sleek Customs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="slide-up transition-all duration-300 hover:shadow-lg bg-white rounded-lg p-6 animate__animated animate__fadeInUp">
+          <p class="mb-4">Welcome to Sleek Customs, where we specialize in transforming your ride into a masterpiece on wheels! At Sleek Customs, we're all about enhancing your driving experience to the fullest.</p>
+          <p class="mb-4">Whether you're driving a VW or AUDI, we've got you covered with our extensive range of customization options. From disabling start/stop systems to activating lap timers, we'll make sure your ride performs like a dream.</p>
+          <p class="mb-4">At Sleek Customs, our mission is simple: to provide you with exceptional automotive tuning services that elevate your driving experience to new heights. We're here to make your automotive dreams a reality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="services" class="py-16" >
+      <div class="container mx-auto px-4 fade-in">
+        <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white shadow-lg rounded-lg p-6 slide-up transition-all duration-300 hover:shadow-xl">
+            <h3 class="text-xl font-bold mb-4 text-primary">Convinience</h3>
+            <ul class="space-y-2">
+              <li>Headlight coding</li>
+              <li>High Intensity Brake Lights</li>
+              <li>Comfort Operation for Sunroof and Windows</li>
+              <li>Interior Light Fading</li>
+            </ul>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg p-6 slide-up transition-all duration-300 hover:shadow-xl" >
+            <h3 class="text-xl font-bold mb-4 text-primary">Safety Enhancements</h3>
+            <ul class="space-y-2">
+              <li>Seatbelt Warning Deactivation</li>
+              <li>Lock/Unlock Confirmation via Horn</li>
+              <li>Tail Lights Function as Brake Lights</li>
+            
+            </ul>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg p-6 slide-up transition-all duration-300 hover:shadow-xl">
+            <h3 class="text-xl font-bold mb-4 text-primary">Performance Upgrades</h3>
+            <ul class="space-y-2">
+              <li>Disable Start/Stop</li>
+              <li>Lap Timer Activation</li>
+              <li>ECS Off Completely with One Click</li>
+              <li>And many more...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="py-16">
+      <div class="container mx-auto px-4 fade-in">
+        <h2 class="text-3xl font-bold mb-8 text-center">Gallery</h2>
+        <div id="videoGallery" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- First 3 Videos (always visible) -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl">
+            <video controls class="w-full h-64 object-cover">
+              <source src="./videos/audi.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl">
+            <video controls class="w-full h-64 object-cover">
+              <source src="./videos/audi3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl">
+            <video controls class="w-full h-64 object-cover">
+              <source src="./videos/golf.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+    
+          <!-- Remaining 7 Videos (initially hidden) -->
+          <div class="extra-video bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl hidden">
+            <video controls class="w-full h-64 object-cover">
+              <source src="./videos/gti.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="extra-video bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl hidden">
+            <video controls class="w-full h-64 object-cover">
+              <source src="./videos/polo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="extra-video bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl hidden">
+            <video controls class="w-full h-64 object-cover">
+              <source src="./videos/polo2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="extra-video bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl hidden">
+            <video controls class="w-full h-64 object-cover">
+              <source src="./videos/polo3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="extra-video bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl hidden">
+            <video controls class="w-full h-64 object-cover">
+              <source src="./videos/poloR.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="extra-video bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl hidden">
+            <video controls class="w-full h-64 object-cover">
+              <source src="./videos/skado.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="extra-video bg-white shadow-lg rounded-lg overflow-hidden slide-up transition-all duration-300 hover:shadow-xl hidden">
+            <video controls class="w-full h-64 object-cover">
+              <source src="./videos/tiguan.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+    
+        <!-- View More/Less Button -->
+        <div class="text-center mt-8">
+          <button id="toggleButton" class="bg-primary text-white px-6 py-3 rounded-lg text-xl hover:bg-secondary transition-colors duration-300">
+            View More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 fade-in">
+          <h2 class="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
+          <div class="bg-white shadow-lg rounded-lg p-6 slide-up transition-all duration-300 hover:shadow-xl">
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+              <input type="hidden" name="access_key" value="795263d3-77a4-44ab-a52a-14b596950bc3">
+      
+              <div class="mb-4">
+                <label for="name" class="block font-medium mb-2 text-primary">Name</label>
+                <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg py-2 px-4" required>
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block font-medium mb-2 text-primary">Email</label>
+                <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg py-2 px-4" required>
+              </div>
+              <div class="mb-4">
+                <label for="number" class="block font-medium mb-2 text-primary">Phone number</label>
+                <input type="tel" id="number" name="number" class="w-full border border-gray-300 rounded-lg py-2 px-4">
+              </div>
+              <div class="mb-4">
+                <label for="Car Details" class="block font-medium mb-2 text-primary">Car Make and Model (including year)</label>
+                <input type="text" id="Car Details" name="Car Details" class="w-full border border-gray-300 rounded-lg py-2 px-4">
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block font-medium mb-2 text-primary">Message</label>
+                <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 rounded-lg py-2 px-4" required></textarea>
+              </div>
+              <div class="mb-4">
+                <button type="submit" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition-colors duration-300">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer class="bg-primary text-white py-6">
+    <div class="container mx-auto px-4 flex justify-between items-center fade-in">
+      <p>&copy; <span id="currentYear"></span> Sleek Customs. All rights reserved.</p>
+      <div class="space-x-4">
+        <a href="https://www.tiktok.com/@sleek_customs?lang=en" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/talent_412?igsh=MW9lamd0cXl1NXAwNQ%3D%3D&utm_source=qr" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/sleek_customs_?igsh=Z3loZGFneWJ5NWl1&utm_source=qr" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+        <a href="+27794518332" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

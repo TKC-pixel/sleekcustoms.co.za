@@ -11,6 +11,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css">
 </head>
 <body class="font-sans antialiased bg-gray-100 text-gray-800">
   <header class="bg-primary py-6 shadow-lg">
@@ -61,7 +62,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="slide-up transition-all duration-300 hover:shadow-lg bg-white rounded-lg p-6 animate__animated animate__fadeInUp">
           <p class="mb-4">Welcome to Sleek Customs, where we specialize in transforming your ride into a masterpiece on wheels! At Sleek Customs, we're all about enhancing your driving experience to the fullest.</p>
-          <p class="mb-4">Whether you're driving a VW or AUDI, we've got you covered with our extensive range of customization options. From disabling start/stop systems to activating lap timers, we'll make sure your ride performs like a dream.</p>
+          <p class="mb-4">Whether you're driving a VW or AUDI, we've got you covered with our extensive range of customization options. From indicator light mods to needle sweeps, we'll make sure your ride performs like a dream.</p>
           <p class="mb-4">At Sleek Customs, our mission is simple: to provide you with exceptional automotive tuning services that elevate your driving experience to new heights. We're here to make your automotive dreams a reality.</p>
         </div>
       </div>
@@ -246,6 +247,39 @@
       </section>
 
     </section> 
+
+    <section id="area">
+      <h1 id="locHeading" class="text-2xl font-semibold text-center text-gray-700 mt-12 mb-10">Location</h1>
+    
+      <!-- Location Section -->
+      <div id="location" class="flex flex-wrap justify-center space-y-6 sm:space-y-0 sm:space-x-6 px-4">
+        
+        <!-- Johannesburg South - Kibler Park -->
+        <div class="loc bg-white border border-blue-600 rounded-lg p-6 shadow-lg text-center relative transform transition hover:shadow-2xl sm:max-w-xs">
+          <i class="bx bx-buildings text-4xl text-blue-600 mb-4"></i>
+          <h2 class="font-semibold text-lg text-gray-700 mb-2">Johannesburg South - Kibler Park</h2>
+          <div class="overflow-hidden mt-4 rounded-lg border border-gray-200">
+            <iframe class="w-full h-72" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11441.621167198!2d28.02148464662334!3d-26.293194748568776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950abac268f819%3A0xddd92be110d7d7bb!2sKibler%20Park%2C%20Johannesburg%20South%2C%202094!5e0!3m2!1sen!2sza!4v1700953639540!5m2!1sen!2sza"></iframe>
+          </div>
+        </div>
+    
+        <!-- Soweto - Protea Glen -->
+        <div class="loc bg-white border border-blue-600 rounded-lg p-6 shadow-lg text-center relative transform transition hover:shadow-2xl sm:max-w-xs">
+          <i class="bx bx-buildings text-4xl text-blue-600 mb-4"></i>
+          <h2 class="font-semibold text-lg text-gray-700 mb-2">Soweto - Protea Glen</h2>
+          <div class="overflow-hidden mt-4 rounded-lg border border-gray-200">
+            <iframe class="w-full h-72" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11443.191154073318!2d27.825318471784678!3d-26.27805546421471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950e63af0625ad%3A0x19c02e0cf26076ad!2sProtea%20Glen%2C%20Soweto%2C%201818!5e0!3m2!1sen!2sza!4v1700953690755!5m2!1sen!2sza"></iframe>
+          </div>
+        </div>
+      </div>
+    
+      <div class="text-center mt-4 text-gray-600 text-sm font-medium bg-yellow-50 p-3 rounded-md border border-yellow-300 shadow-sm">
+        <p>House calls available at an extra cost. Select house call service on the form below to get a quote.</p>
+      </div>
+    </section>
+    
+    <br><br><br>
+    <section id="contact">
     <div class="container mx-auto px-4 fade-in">
       <h2 class="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
       <div class="bg-white shadow-lg rounded-lg p-6 slide-up transition-all duration-300 hover:shadow-xl">
@@ -314,20 +348,22 @@
         </form>
       </div>
     </div>
+    </section>
 
   </main>
-
   <footer class="bg-primary text-white py-6">
-    <div class="container mx-auto px-4 flex justify-between items-center fade-in">
-      <p>&copy; <span id="currentYear"></span> Sleek Customs. All rights reserved.</p>
-      <div class="space-x-4">
+    <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 fade-in">
+      <p class="text-center sm:text-left">&copy; <span id="currentYear"></span> Sleek Customs. All rights reserved.</p>
+      <div class="flex space-x-4 justify-center sm:justify-end">
         <a href="https://www.tiktok.com/@sleek_customs?lang=en" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-tiktok"></i></a>
         <a href="https://www.instagram.com/talent_412?igsh=MW9lamd0cXl1NXAwNQ%3D%3D&utm_source=qr" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram"></i></a>
         <a href="https://www.instagram.com/sleek_customs_?igsh=Z3loZGFneWJ5NWl1&utm_source=qr" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram"></i></a>
         <a href="tel:+27794518332" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fas fa-phone"></i></a>
+        <a href="mailto:sleekcustoms24@gmail.com" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fas fa-envelope"></i></a> <!-- Email Link -->
       </div>
     </div>
   </footer>
+  
 
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

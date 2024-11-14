@@ -58,7 +58,7 @@ toggleButton.addEventListener('click', function () {
   });
 
   // Toggle button text between "View More" and "View Less"
-  toggleButton.textContent = toggleButton.textContent === 'View More' ? 'View' : 'View More';
+  toggleButton.textContent = toggleButton.textContent === 'View Less' ? 'View More' : 'View Less';
 });
 
 // Set current year dynamically

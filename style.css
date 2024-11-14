@@ -126,3 +126,73 @@ body.menu-open {
 .text-primary {
   color: #1a202c;
 }
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* Hide images that are not in view */
+}
+
+/* Track for all images */
+.carousel-track {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+/* Individual image styling */
+.testimonial-item {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image fills the space */
+  opacity: 0; /* Initially hide all images */
+  transition: opacity 1s ease-in-out; /* Fade transition */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make active image visible */
+.testimonial-item.active {
+  opacity: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}

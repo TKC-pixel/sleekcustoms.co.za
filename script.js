@@ -112,3 +112,22 @@ function showError(error) {
       break;
   }
 }
+
+
+let currentIndex = 0;  
+    const images = document.querySelectorAll('.testimonial-item'); 
+    const totalImages = images.length;  
+
+
+    function nextSlide() {
+
+      images[currentIndex].classList.remove('active');
+
+      currentIndex = (currentIndex + 1) % totalImages; 
+
+      
+      images[currentIndex].classList.add('active');
+    }
+
+  
+    setInterval(nextSlide, 3000);
